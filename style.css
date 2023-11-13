@@ -1,0 +1,587 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans', sans-serif;
+}
+
+:root{
+    --darkBlue: #031834;
+    --darkGreen: #0e790e;
+    --lightGreen: #12b812;
+    --white: #ffffff;
+    --linearGradient: linear-gradient(to right, #0e790e, #12b812);
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    --gray: #737373;
+}
+
+h1,h2,h3,h4{
+    color: var(--darkBlue);
+}
+
+h1{
+    font-size: 34px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+p{
+    color: var(--gray);
+}
+
+section{
+    padding: 6rem 5rem;
+    /* width: 100%; */
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    background: var(--darkGreen);
+    cursor: pointer; 
+}
+
+.center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+h1,p{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navBrand{
+    font-size:18px;
+    color: var(--darkBlue);
+}
+
+.navBrand span{
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+.navLink{
+    transition: 1s ease;
+    color: var(--darkBlue);
+}
+
+.navLink:hover{
+    color: #12b812;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--darkBlue)
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero__content{
+    width: 50%;
+}
+
+.hero__content h1{
+    color: var(--darkGreen);
+}
+
+.hero__content p{
+    margin-top: 1rem;
+}
+
+.btnDiv{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.btnDiv .white{
+    color: #031834;
+    background: transparent;
+    border: 1px solid var(--darkGreen);
+    display: flex;
+    align-items: center;
+}
+
+.white i{
+    font-size: 18px;
+    margin-right: 0.2rem;
+}
+
+.hero__img{
+    width: 50%;
+}
+
+.hero__img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem 3rem;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.brand__Logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.brand__Logo img{
+    width: 100px;
+    
+}
+
+.section__1{
+    text-align: center;
+}
+
+.section__1 p, .section__3 p, .section__4 p{
+    margin: 1rem auto;
+    width: 50%;
+}
+
+.nombers__div p{
+    width: 100%;
+}
+
+.nombers__div{
+    margin: 4rem 0;
+    display: flex;
+    gap: 3rem;
+}
+
+.nombers__div .circle{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--white);
+    margin-bottom: 1rem;
+    background: var(--linearGradient);
+}
+
+.section__2{
+    display: flex;
+    gap: 3rem;
+}
+
+.image_two{
+    position: relative;
+    width: 50%;
+}
+
+.image_two img{
+    position: absolute;
+    top: -50px;
+    right: 18px;
+    left: -15px;
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.green__box{
+    width: 450px;
+    height: 470px;
+    background-color: var(--darkGreen);
+}
+.sec2__content{
+    width: 50%;
+}
+
+.sec2__content h2{
+    margin: 0.6rem 0;
+}
+
+.section__2 button{
+    margin: 2rem 0;
+}
+
+
+.section__3{
+    text-align: center;
+}
+
+.client__div{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card__body{
+    padding: 15px 30px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+}
+
+.card__body h4{
+    margin: 0.6rem 0;
+}
+
+.card__body .star__rating{
+    margin-bottom: 1rem;
+    color: gold;
+}
+
+.client__div span{
+    margin-top: 2rem;
+    color: var(--gray);
+}
+
+.profile__Img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.section__4{
+    text-align: center;
+    background: var(--darkGreen);
+}
+
+.section__4 h3{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.section__4 p{
+    margin-top: 1rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.callTo__Action{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 10px 30px;
+}
+
+.callTo__Action input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.textarea__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    padding: 10px;
+    outline: none;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100px;
+    display: block;
+    border-radius: 8px;
+}
+
+.callTo__Action button{
+    margin-top: 2rem;
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+
+footer{
+    padding: 1rem 0;
+    background-color: #ecf3ec;
+}
+
+footer h4{
+    text-align: center;
+}
+
+.social_icons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social_icons i:hover{
+    cursor: pointer;
+    color: var(--darkGreen);
+}
+
+
+
+/* @media only screen
+and (min-width: 768px)
+and (max-width: 1024px){
+
+} */
+
+
+
+@media(max-width: 768px){
+    section{
+        padding: 2rem;
+    }
+    .navbar{
+        padding: 2rem;
+    }
+
+    .hero{
+        padding: 2rem;
+    }
+
+    .hero__content{
+        width: 100%;
+    }
+
+    .hero__content h1{
+        width: 60%;
+    }
+
+    .hero__content p{
+        width: 80%;
+    }
+
+    .hero__img{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .btnDiv button{
+        padding: 10px 15px;
+    }
+
+    .section__1 h2{
+        width: 100%;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--darkGreen);
+        width: 100%;
+        transition: 0.3s ;
+        text-align: center;
+    }
+    
+    .navLink{
+        transition: 1s ease;
+        color: var(--white);
+    }
+
+    .navItem{
+        margin: 16px 0;
+    }
+
+    .navMenu.active{
+        left: 0;
+    }
+
+    .hero__img img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .section__2, .input__group, .client__div{
+        gap: 2rem;
+    }
+
+    .image_two{
+        width: 100%;
+    }
+
+    .sec2__content{
+        width: 100%;
+    }
+
+    .image_two img{
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    left: -15px;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+    .green__box{
+    width: 350px;
+    height: 400px;
+}
+
+    .card__body{
+        padding: 10px;
+    }
+
+    textarea, .callTo__Action input{
+        width: 80%;
+    }
+
+    .section__1 p, .section__3 p, .section__4 p{
+        width: 100%;
+    }
+
+    .callTo__Action input{
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media only screen 
+and (min-width: 325px)
+and (max-width: 480px){
+    .image_two img{
+        top: -20px;
+        left: -15px;
+        right: 18px;
+        width: 400px;
+        height: 400px;
+    }
+    
+        .green__box{
+        width: 278px;
+        height: 400px;
+    }
+    
+    
+
+}
+
+
+@media (max-width: 600px){
+    .nombers__div{
+        flex-wrap: wrap;
+    }
+
+    .section__2{
+        flex-wrap: wrap;
+    }
+
+    .image_two img{
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        left: -15px;
+        width: 280px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .green__box{
+        width: 278px;
+        height: 400px;
+    }
+    
+    .client__div{
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+@media(min-width: 1336px){
+    .container{
+        width: 1080px;
+    }
+}
